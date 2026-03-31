@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Generative Art</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        h1 { margin-bottom: 10px; }
+        p { color: #aaaaaa; margin-bottom: 30px; }
+        
+        /* CSS Grid for the gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .gallery-item {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .caption {
+            padding: 15px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>My Python Art Gallery</h1>
+    <p>A collection of fractals, physics simulations, and animations generated with Python.</p>
+
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="NewtonFractal.png" alt="5-root Newton Fractal">
+            <div class="caption">Newton Fractal generated to high precision.</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="NewtonFractal2.png" alt="Complex Newton Fractal">
+            <div class="caption">A very chaotic Newton Fractal</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="NewtonShadedWithMovingRoots.gif" alt="Newton Fractal with Moving Roots">
+            <div class="caption">A Newton Fractal with moving roots and shading dependent on convergence rate.</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="MandellaTest.png" alt="Basic Mandelebrot Set">
+            <div class="caption">A basic Mandlebrot set generated with recursion.</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="doublePendulumLong.gif" alt="Double Pendulum Simulation">
+            <div class="caption">A Double Pendulum simulation using runge kutta methods to showcase divergent/chaotic nature of starting positions.</div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="DoublePendulumFlipStateSpace.png" alt="State Space of Double Pendulum">
+            <div class="caption">Each point represents a different starting position for a double pendulum with respect to theta1 and theta2. White means that the double pendulum never flips. The darker colors represent how quickly the double pendulum fips.</div>
+        </div>
+        
+        </div>
+
+</body>
+</html>
